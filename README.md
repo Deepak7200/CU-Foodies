@@ -1,4 +1,4 @@
 # CU-Foodies
-This is my first repository.
+College Project
 <br>
 Author - Deepak Sehrawat
