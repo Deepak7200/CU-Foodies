@@ -51,32 +51,108 @@
   <!-- Navigation Bar -->
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
-      
-<!-- . -->
-    <div class="container-fluid">
-      <a class="navbar-brand col-lg-3" href="#">
-        <img src="./logo.jpg" alt="Logo" class="img-fluid">
-      </a>
-
-
-<!-- Search Box -->
-  <div class="search-box">
-    <div class="rightNav v-class-resp">
-        <input type="text" id="input-box" placeholder="Available Food Stores" autocomplete="off">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
-    <div class="result-box"></div>
-</div>
-
-<!-- Menu -->
+      <!-- Menu -->
       <div class="dropdown-center">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Login
+          Menu
         </button>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="home.html">Login</a></li>
         </ul>
       </div>
+      
+<!-- . -->
+    <div class="container-fluid">
+      <a class="navbar-brand col-lg-3" href="#">
+@@ -76,90 +68,15 @@
+    <div class="result-box"></div>
+</div>
+
+<!-- login/signup -->
+      <div class="row">
+        <div class="col-lg-10"></div>
+          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        </div>
+        <div style="margin-left: -150px;">
+          <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login to CUFeast</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SignUP modal -->
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Get an CuFeast Account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="cexampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<!-- Menu -->
+      
+    </div>
+  </div>
+</div>
 
   <div class="slide-contain">
     <div class="slideshow-container">
